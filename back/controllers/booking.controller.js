@@ -24,7 +24,7 @@ const createBooking = catchAsync(async (req, res, next) => {
 
   const newBooking = await Booking.create({
     userId: user._id,
-    fildId: fild,
+    fildId,
     bookingTime,
     bookingDate,
     price,
